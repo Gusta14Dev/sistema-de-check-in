@@ -36,26 +36,30 @@ Para rodar o projeto você precisa ter:<br>
 
 Para rodar o projeto faça:<br>
 
-    1. Clone o ropositorio atual na sua maquina:
+    1. Clone o ropositorio atual na sua maquina:<br>
+
     ```shell
     git clone https://github.com/Gusta14Dev/sistema-de-check-in.git
     ```
     
-    2. Rode o composer:
+    2. Rode o composer:<br>
+
     ```shell
     composer install
     ```
 
-    3. Compile o Js e o CSS:
+    3. Compile o Js e o CSS:<br>
+
     ```shell
     npm install && npm run dev
     ```
 
-    4. Rode as Migrations e os Seeder
-     ```shell
+    4. Rode as Migrations e os Seeder<br>
+
+    ```shell
     php artisan migrate --seed
     ```
 
-    5. Entre no sistema com o login de administrador:
-        -> Login: Admin
-        -> Senha: Admin123
+    5. Entre no sistema com o login de administrador:<br>
+        -> Login: Admin<br>
+        -> Senha: Admin123<br>
