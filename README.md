@@ -62,5 +62,5 @@ Para instalar o projeto faça:
     ```
 
 5. Entre no sistema com o login de administrador:<br>
-        -> Login: Admin<br>
-        -> Senha: Admin123<br>
+        Login: Admin<br>
+        Senha: Admin123<br>
