@@ -17,12 +17,45 @@ O aluno poderá:<br>
     -> Cancelar Check-In<br>
 
 As tecnologias utilizados no projeto foram:<br>
-    -> PHP<br>
+    -> PHP 8<br>
     -> Laravel 8<br>
     -> Tailwind CSS<br>
     -> MySQL<br>
+    -> Git<br>
 
 Modulos extras utilizados:<br>
-    -> Template Inicial Breeze<br>
+    -> Kit Inicial Breeze<br>
     -> Módulo de linguagem Português do Brasil (pt-BR) para Laravel >= 5.6<br>
     -> Sweetalert2<br>
+
+
+Para rodar o projeto você precisa ter:<br>
+    -> Composer<br>
+    -> Node<br>
+    -> NPM<br>
+
+Para rodar o projeto faça:<br>
+
+    1. Clone o ropositorio atual na sua maquina:
+    ```shell
+    git clone https://github.com/Gusta14Dev/sistema-de-check-in.git
+    ```
+    
+    2. Rode o composer:
+    ```shell
+    composer install
+    ```
+
+    3. Compile o Js e o CSS:
+    ```shell
+    npm install && npm run dev
+    ```
+
+    4. Rode as Migrations e os Seeder
+     ```shell
+    php artisan migrate --seed
+    ```
+
+    5. Entre no sistema com o login de administrador:
+        -> Login: Admin
+        -> Senha: Admin123
