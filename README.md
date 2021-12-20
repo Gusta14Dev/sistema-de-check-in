@@ -28,7 +28,7 @@ Modulos extras utilizados:<br>
     -> Módulo de linguagem Português do Brasil (pt-BR) para Laravel >= 5.6<br>
     -> Sweetalert2<br>
 
-
+## Requisitos
 Para rodar o projeto você precisa ter:<br>
     -> Composer<br>
     -> Node<br>
