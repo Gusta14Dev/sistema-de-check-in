@@ -1,5 +1,7 @@
 <x-app-layout>
-    <x-slot name="dashboard">true</x-slot>
+
+    <x-slot name="rooms">true</x-slot>
+
     <div class="flex flex-col space-y-8">
         <!-- First Row -->
         <div class="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-5 px-4 xl:p-0 gap-y-4 md:gap-6">
@@ -28,7 +30,7 @@
                         </h2>
                     </div>
                     <div class="flex gap-2 md:gap-4">
-                        <a href="#" class="bg-blue-600 px-5 py-3 w-full text-center md:w-auto rounded-lg text-white text-xs tracking-wider font-semibold hover:bg-blue-800">
+                        <a href="{{route('students')}}" class="bg-blue-600 px-5 py-3 w-full text-center md:w-auto rounded-lg text-white text-xs tracking-wider font-semibold hover:bg-blue-800">
                             Ver todos
                         </a>
                     </div>
@@ -36,65 +38,11 @@
             </div>
             <x-register-room></x-register-room>
         </div>
-        <!-- End First Row -->
-        <!-- Start Second Row -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-4 xl:p-0 gap-4 xl:gap-6">
-            <div class="bg-white p-6 rounded-xl border border-gray-50">
-                <div class="flex justify-between items-start">
-                    <div class="flex flex-col">
-                        <p class="text-xs text-gray-600 tracking-wide">Quantidade de aulas</p>
-                        <h3 class="mt-1 text-lg text-blue-500 font-bold">0</h3>
-                        <span class="mt-4 text-xs text-gray-500">Ultima aula realizada: 22/03/2001</span>
-                    </div>
-                    <div class="bg-blue-500 p-2 md:p-1 xl:p-2 rounded-md">
 
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white p-6 rounded-xl border border-gray-50">
-                <div class="flex justify-between items-start">
-                    <div class="flex flex-col">
-                        <p class="text-xs text-gray-600 tracking-wide">Quantidade de alunos</p>
-                        <h3 class="mt-1 text-lg text-green-500 font-bold">0</h3>
-                        <span class="mt-4 text-xs text-gray-500">Ultimo aluno cadastrado: 22/03/2001</span>
-                    </div>
-                    <div class="bg-green-500 p-2 md:p-1 xl:p-2 rounded-md">
-
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white p-6 rounded-xl border border-gray-50">
-                <div class="flex justify-between items-start">
-                    <div class="flex flex-col">
-                        <p class="text-xs text-gray-600 tracking-wide">Quantidade de Check In</p>
-                        <h3 class="mt-1 text-lg text-yellow-500 font-bold">0</h3>
-                        <span class="mt-4 text-xs text-gray-600">Ultimo Check In realizado: 22/03/2001</span>
-                    </div>
-                    <div class="bg-yellow-500 p-2 md:p-1 xl:p-2 rounded-md">
-
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white p-6 rounded-xl border border-gray-50">
-                <div class="flex justify-between items-start">
-                    <div class="flex flex-col">
-                        <p class="text-xs text-gray-600 tracking-wide">Check In cancelados</p>
-                        <h3 class="mt-1 text-lg text-red-500 font-bold">0</h3>
-                        <span class="mt-4 text-xs text-gray-500">ultimo Chech In cancelado: 22/03/2001</span>
-                    </div>
-                    <div class="bg-red-500 p-2 md:p-1 xl:p-2 rounded-md">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Second Row -->
-        <!-- Start Third Row -->
         <div class="px-4 xl:p-0 gap-y-4 md:gap-6">
             <div class="w-full bg-white p-6 rounded-xl border border-gray-50 flex flex-col space-y-6">
                 <div class="flex justify-between items-center">
-                    <h2 class="text-sm text-gray-600 font-bold tracking-wide">Ultimas aulas cadastradas</h2>
-                    <a href="{{route('rooms')}}" class="px-4 py-2 text-xs bg-blue-100 text-blue-500 rounded uppercase tracking-wider font-semibold hover:bg-blue-300">Mais</a>
+                    <h2 class="text-sm text-gray-600 font-bold tracking-wide">Aulas cadastradas</h2>
                 </div>
                 <div class="flex-col justify-center">
                     <div class="w-full flex justify-between shadow-md flex-wrap">
@@ -140,6 +88,7 @@
                 </div>
             </div>
         </div>
-        <!-- End Third Row -->
     </div>
+
+
 </x-app-layout>

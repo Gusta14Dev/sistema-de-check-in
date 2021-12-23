@@ -1,9 +1,7 @@
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
-            <a href="/">
                 <x-application-logo class="fill-current text-gray-500" />
-            </a>
         </x-slot>
 
         <!-- Session Status -->
