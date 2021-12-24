@@ -19,6 +19,7 @@
 </head>
 
 <body class="relative antialiased bg-gray-100 px-2">
+    @include('sweetalert::alert')
     @include('layouts.navigation')
     <main class="container mx-w-6xl mx-auto py-4 max-w-6xl">
         {{ $slot }}

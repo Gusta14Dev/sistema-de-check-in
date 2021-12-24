@@ -15,8 +15,14 @@
         </a>
         <ul class="flex items-center space-x-4 text-sm font-semibold">
             <li><a href="{{route('dashboard')}}" class="px-2 xl:px-4 py-2 @isset($dashboard) text-white bg-blue-600 @else text-gray-600 hover:bg-gray-200 @endisset rounded-md">Dashboard</a></li>
+            @if(Auth::user()->isAdmin)
             <li><a href="{{route('rooms')}}" class="px-2 xl:px-4 py-2 @isset($rooms) text-white bg-blue-600 @else text-gray-600 hover:bg-gray-200 @endisset rounded-md">Aulas</a></li>
             <li><a href="{{route('students')}}" class="px-2 xl:px-4 py-2 @isset($students) text-white bg-blue-600 @else text-gray-600 hover:bg-gray-200 @endisset rounded-md">Alunos</a></li>
+            @endif
+            @if(!Auth::user()->isAdmin)
+            <li><a href="{{route('rooms.checkin')}}" class="px-2 xl:px-4 py-2 @isset($checkin) text-white bg-blue-600 @else text-gray-600 hover:bg-gray-200 @endisset rounded-md">Minhas aulas confirmadas</a></li>
+            <li><a href="{{route('rooms.week')}}" class="px-2 xl:px-4 py-2 @isset($week) text-white bg-blue-600 @else text-gray-600 hover:bg-gray-200 @endisset rounded-md">Aulas da semana</a></li>
+            @endif
         </ul>
 
         <ul class="flex items-center gap-6">

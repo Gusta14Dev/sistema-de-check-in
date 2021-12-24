@@ -19,7 +19,7 @@ class CreateRoomsTable extends Migration
             $table->datetime('start');
             $table->datetime('final');
             $table->string('teacher');
-            $table->integer('max_student');
+            $table->integer('max_students');
             $table->timestamps();
         });
     }

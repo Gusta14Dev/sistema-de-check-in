@@ -23,6 +23,16 @@ class Controller extends BaseController
                 Alert::error(session('error'));
             }
 
+            if (session('errorForm')) {
+                $html = "<ul style='list-style: none;'>";
+                foreach(session('errorForm') as $error) {
+                    $html .= "<li>$error[0]</li>";
+                }
+                $html .= "</ul>";
+
+                Alert::html('Ocorreu um erro!!', $html, 'error');
+            }
+
             return $next($request);
         });
     }
