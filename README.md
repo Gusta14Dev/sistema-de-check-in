@@ -27,6 +27,7 @@ Modulos extras utilizados:<br>
     -> Kit Inicial Breeze<br>
     -> Módulo de linguagem Português do Brasil (pt-BR) para Laravel >= 5.6<br>
     -> Sweetalert2<br>
+    -> Flatpickr.js<br>
 
 ## Requisitos
 Para rodar o projeto você precisa ter:<br>
